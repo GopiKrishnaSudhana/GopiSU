@@ -1,0 +1,23 @@
+/* Base Body Styles */
+body {
+    background-color: #000000; /* bg-apple-bg */
+    color: #ffffff; /* text-white */
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* font-sans */
+    -webkit-font-smoothing: antialiased; /* antialiased */
+}
+
+/* Selection Color */
+::selection {
+    background-color: #0A84FF; /* selection:bg-apple-accent */
+    color: #ffffff; /* selection:text-white */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* scroll-smooth */
+}
+
+/* Hide Overflow X (prevents horizontal scroll) */
+body {
+    overflow-x: hidden; /* overflow-x-hidden */
+}
