@@ -10,7 +10,11 @@ tailwind.config = {
                     accent: '#0A84FF',
                     purple: '#BF5AF2',
                     green: '#32D74B',
-                    orange: '#FF9F0A'
+                    orange: '#FF9F0A',
+                    cyan: '#2FD9D4', 
+                    indigo: '#B0A9E5',
+                    olive: '#8BBB92',
+                    amber: '#E77023'
                 }
             },
             fontFamily: {
@@ -23,3 +27,13 @@ tailwind.config = {
         }
     }
 }
+
+// Load and Initialize EmailJS globally via config
+const emailScript = document.createElement('script');
+emailScript.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+emailScript.onload = function() {
+    emailjs.init({
+        publicKey: "bOCWLtVyQi12fM1Us",
+    });
+};
+document.head.appendChild(emailScript);
